@@ -15,6 +15,8 @@ public class SessionOne extends OpMode {
     private RevTouchSensor touchSensor;
     private DcMotor leftDrive;
     private DcMotor rightDrive;
+    private DcMotor leftTurn;
+    private DcMotor rightTurn;
 
     @Override
     public void init() {
@@ -31,6 +33,7 @@ public class SessionOne extends OpMode {
         telemetry.addData("y", -gamepad1.left_stick_y);
 
         leftDrive.setPower(-gamepad1.left_stick_y * MAX_SPEED);
+        leftTurn.setPower();
         rightDrive.setPower(-gamepad1.right_stick_y * MAX_SPEED);
     }
 }
