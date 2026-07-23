@@ -1,7 +1,5 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.bylazar.telemetry.PanelsTelemetry;
-import com.bylazar.telemetry.TelemetryManager;
 import com.qualcomm.hardware.rev.RevTouchSensor;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
@@ -9,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @TeleOp
-public class TelemetryTest extends OpMode{
+public class Examples extends OpMode{
     private RevTouchSensor touchSensor;
     private DcMotor leftDrive;
     private DcMotor rightDrive;
